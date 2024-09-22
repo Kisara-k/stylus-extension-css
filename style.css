@@ -1,5 +1,5 @@
 :root {
-  --block-space: 7px;
+  --block-space: 0px;
 }
 
 .notion-table-view-add-row {
@@ -7,8 +7,10 @@
 }
 
 .notion-numbered_list-block.notion-selectable > div, .notion-bulleted_list-block.notion-selectable > div, .notion-toggle-block.notion-selectable > div {
+  	--factor: 7px;
 	padding-bottom: 0px !important;
-	margin-bottom: -6px !important;
+	margin-bottom: calc(-6px + var(--factor)) !important;
+	margin-top: calc(-0px - var(--factor)) !important;
 	margin-left: -4px !important;
 }
 
@@ -25,16 +27,23 @@
 
 .notion-text-block.notion-selectable > div > div > .notranslate {
 	padding-top: var(--block-space) !important;
+	margin-top: -4px!important;
+	padding-bottom: 6px !important;
 }
 
 .notion-sub_header-block.notion-selectable > div > .notranslate {
 	margin-top: -14px !important;
-	margin-bottom: -6px !important;
 }
 
 .notion-sub_sub_header-block.notion-selectable > div > .notranslate, .notion-sub_sub_header-block.notion-selectable > div > div  {
-    padding-top: 5px !important;
 	margin-top: -3px !important;
+}
+
+h3 {
+    padding-bottom: 10px !important;
+}
+h4 {
+    padding-bottom: 10px !important;
 }
 
 .layout-content-with-divider.layout-content > div > div > div > div > div {
@@ -54,7 +63,6 @@
 }
 
 .notion-sub_sub_header-block.notion-selectable > div > div {
-    padding-top: 5px !important;
 	margin-top: -3px !important;
 	margin-left: -28px !important;
 }
@@ -74,8 +82,8 @@
 }
 
 .notion-callout-block.notion-selectable > div > div {
-	padding-top:4px!important;
-	padding-bottom:16px!important;
+	padding-top:18px!important;
+	padding-bottom:12px!important;
 	background: #99b0b538;
 	/*background: #91bcc638 !important;*/
 }
