@@ -1,0 +1,165 @@
+:root {
+  --block-space: 7px;
+}
+
+.notion-table-view-add-row {
+	display: none !important;
+}
+
+.notion-numbered_list-block.notion-selectable > div, .notion-bulleted_list-block.notion-selectable > div, .notion-toggle-block.notion-selectable > div {
+	padding-bottom: 0px !important;
+	margin-bottom: -6px !important;
+	margin-left: -4px !important;
+}
+
+.notion-numbered_list-block.notion-selectable > div > .pseudoSelection {
+	padding-bottom: 1px !important;
+}
+
+
+.notion-page-block.notion-selectable > .notranslate {
+    font-size: 33px !important;
+    margin-bottom: -10px !important;
+	font-weight: 400 !important;
+}
+
+.notion-text-block.notion-selectable > div > div > .notranslate {
+	padding-top: var(--block-space) !important;
+}
+
+.notion-sub_header-block.notion-selectable > div > .notranslate {
+	margin-top: -14px !important;
+	margin-bottom: -6px !important;
+}
+
+.notion-sub_sub_header-block.notion-selectable > div > .notranslate, .notion-sub_sub_header-block.notion-selectable > div > div  {
+    padding-top: 5px !important;
+	margin-top: -3px !important;
+}
+
+.layout-content-with-divider.layout-content > div > div > div > div > div {
+	display: none !important;
+}
+
+.notion-sub_header-block.notion-selectable > div > div {
+	margin-top: -14px !important;
+	margin-bottom: -6px !important;
+	margin-left: -28px !important;
+}
+
+.notion-sub_header-block.notion-selectable > div > div > .pseudoSelection > div {
+	margin-left: 42px !important;
+	padding-right:4px !important;
+	color: #0000;
+}
+
+.notion-sub_sub_header-block.notion-selectable > div > div {
+    padding-top: 5px !important;
+	margin-top: -3px !important;
+	margin-left: -28px !important;
+}
+
+.notion-sub_sub_header-block.notion-selectable > div > div > .pseudoSelection > div {
+	margin-left: 42px !important;
+	padding-right:4px !important;
+	color: #0000;
+}
+
+.notranslate::after {
+	visibility: hidden;
+}
+
+.notion-toggle-block.notion-selectable > div > .pseudoSelection > div {
+	opacity: 0.8;
+}
+
+.notion-callout-block.notion-selectable > div > div {
+	padding-top:4px!important;
+	padding-bottom:16px!important;
+	background: #99b0b538;
+	/*background: #91bcc638 !important;*/
+}
+
+.notion-callout-block.notion-selectable {
+	padding-top:4px!important;
+}
+
+/* Seperator */
+
+.notion-divider-block.notion-selectable {
+	opacity: 0;
+}
+
+/* Code Block */
+
+.notion-enable-hover:nth-of-type(2), div.notion-text-block.notion-selectable > div > div > .notranslate > .notion-enable-hover, .notion-numbered_list-block.notion-selectable > div > div > div > .notranslate > .notion-enable-hover,  .notion-bulleted_list-block.notion-selectable > div > div > div > .notranslate > span.notion-enable-hover{
+    background: #00000000 !important;
+	padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top:0px !important;
+    font-size: 100% !important;
+	color: #408bb5 !important;
+  	/*font-family: inherit !important;*/
+}
+
+.notion-table-view-cell:not([data-col-index="0"]):not([data-col-index="1"]) > div > div > div[style*="pointer-events: none;"] {
+	display: none!important;
+}
+
+.notion-code-block.line-numbers > .notranslate {
+	padding-bottom:15px!important;
+	padding-top:15px!important;
+	padding-left:15px!important;
+	background: #b5f2ff12 !important;
+	font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+}
+
+/* Page Style*/
+
+:root {
+  --side: -70px;
+	--side-main: -80px;
+}
+
+.notion-page-content {
+    max-width: 100% !important;
+    margin-top: -6px !important;
+    line-height: 1.4 !important;
+    align-items: center !important;
+  	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 15.5px !important;
+}
+
+.layout-wide.layout {
+	margin-left: calc(var(--side-main)*2) !important;
+	margin-right: var(--side-main) !important;
+}
+.notion-collection-view-body.horizontal.notion-scroller {
+    overflow-x: hidden !important;
+}
+
+.notion-peek-renderer {
+    background: #00000000 !important;
+    max-width: 200% !important;
+	margin-left: -20px !important;
+	margin-right: -20px !important;
+}
+
+.notion-peek-renderer > div:nth-child(2) {
+    border-radius: 0.5rem !important
+}
+
+.notion-peek-renderer > div {
+    height: calc(98%) !important;
+    margin-top:-62px !important;
+}
+.notion-peek-renderer > div > div > div > div {
+    margin-left: var(--side) !important;
+    margin-right: var(--side) !important;
+    margin-top: -10px !important;
+}
+
+.ignore-scrolling-container {
+	padding-right:100px !important;
+	margin-right:100px !important;
+}
