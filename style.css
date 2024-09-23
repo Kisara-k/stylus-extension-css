@@ -27,8 +27,8 @@
 
 .notion-text-block.notion-selectable > div > div > .notranslate {
 	padding-top: var(--block-space) !important;
-	margin-top: -4px!important;
-	padding-bottom: 6px !important;
+	margin-top: -2px!important;
+	padding-bottom: 8px !important;
 }
 
 .notion-sub_header-block.notion-selectable > div > .notranslate {
@@ -68,8 +68,8 @@ h4 {
 }
 
 .notion-sub_sub_header-block.notion-selectable > div > div > .pseudoSelection > div {
-	margin-left: 42px !important;
-	padding-right:4px !important;
+	margin-left: 50px !important;
+	padding-left:8px !important;
 	color: #0000;
 }
 
@@ -84,9 +84,13 @@ h4 {
 .notion-callout-block.notion-selectable > div > div {
 	padding-top:18px!important;
 	padding-bottom:12px!important;
+	margin-top:-6px!important;
+	margin-bottom:6px!important;
 	background: #99b0b538;
-	/*background: #91bcc638 !important;*/
+	background: #aac2c838 !important;
+ 	border-radius: 10px !important;
 }
+
 
 .notion-callout-block.notion-selectable {
 	padding-top:4px!important;
@@ -147,14 +151,14 @@ h4 {
 }
 
 .notion-peek-renderer {
-    background: #00000000 !important;
-    max-width: 200% !important;
-	margin-left: -20px !important;
-	margin-right: -20px !important;
+    background: #ffffffe0 !important;
+	margin-left: -60px !important;
+	margin-right: -60px !important;
 }
 
 .notion-peek-renderer > div:nth-child(2) {
-    border-radius: 0.5rem !important
+    border-radius: 0.5rem !important;
+    max-width: 905px !important;
 }
 
 .notion-peek-renderer > div {
@@ -162,6 +166,7 @@ h4 {
     margin-top:-62px !important;
 }
 .notion-peek-renderer > div > div > div > div {
+    padding-left: 5px !important;
     margin-left: var(--side) !important;
     margin-right: var(--side) !important;
     margin-top: -10px !important;
