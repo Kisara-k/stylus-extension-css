@@ -69,7 +69,6 @@ div[role="dialog"][style*="background: rgb(15, 15, 15);"] {
     width: 14px !important; /* Smaller width */
     height: 14px !important; /* Smaller height */
     padding-bottom: 2px !important; /* Adjust the padding as per your needs */
-    background: rgb(35, 131, 226) !important; /* Ensure blue background remains */
 }
 
 .notion-table-view-cell > div > div > .triangle {
@@ -414,4 +413,3 @@ div:has(> h1) {
 .notion-button-block > div > div > div > div {
 	border-color: #00000000 !important;
 }
-
