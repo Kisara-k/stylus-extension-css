@@ -1,0 +1,88 @@
+.z-0 {
+    border-radius: 0.5rem !important;
+    max-width: calc(940px + 2*var(--side)) !important;
+    background: #ffffff47 !important;
+}
+
+.z-0::before {
+    --color: rgba(32, 22, 22, .85);
+    --color: rgba(28, 21, 21, .6);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(var(--color), var(--color)), 
+        url('https://raw.githubusercontent.com/Kisara-k/wallpapers/refs/heads/main/Arle%20Main.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: grayscale(50%); /* Reduces saturation */
+    z-index: -1; /* Ensures the image stays in the background */
+}
+
+/* Hide Sora button */
+
+.relative.self-stretch {
+    display: none;
+}
+
+
+/* canvas styles */
+
+* {
+    --main-surface-primary: #0000;
+    --main-surface-secondary: #ffffff0d;
+    --message-surface: #5757573d;
+}
+
+.absolute.bottom-0.z-20.h-24.w-full.transition-colors {
+    display: none !important;
+}
+
+*  {
+    scrollbar-width: thin; /* Thinner scrollbar for Firefox */
+    scrollbar-color: #0000003d transparent; 
+}
+
+
+
+.bg-token-sidebar-surface-primary, .bg-token-main-surface-primary {
+    background: #00000000;
+}
+
+/* Hide scrollbar for Firefox */
+.overflow-y-auto.pr-2.-mr-2.relative.duration-500.transition-opacity.flex-1.flex-col {
+    scrollbar-width: thin; /* Thinner scrollbar for Firefox */
+    scrollbar-color: #0000003d transparent; 
+}
+
+.react-scroll-to-bottom--css-wqgjq-1n7m0yu {
+    scrollbar-width: thin; /* Thinner scrollbar for Firefox */
+}
+
+.no-draggable {
+    background: none !important;
+}
+
+.relative.grow.overflow-hidden.whitespace-nowrap .absolute {
+    background: none !important;
+}
+
+.relative.max-w-\[70\%\].rounded-3xl.px-5.py-2\.5, .border-token-main-surface-tertiary {
+    background: rgba(0, 0, 0, .16) !important;
+    border:none;
+}
+
+.contain-inline-size {
+    background: #0000002e !important;
+    border: 10px !important;
+    border-color: #fff !important;
+}
+
+.relative.w-full.px-2.py-2.text-center.text-xs.text-token-text-secondary {
+    opacity: 0 !important;
+    display: none;
+}
