@@ -1,0 +1,109 @@
+div.text_cell_render {
+    font-family: 'Segoe UI Emoji', Arial, sans-serif !important;
+}
+
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border-color: transparent;
+}
+
+.edit_mode div.cell.selected {
+    border-color: transparent;
+}
+
+.edit_mode div.cell.selected:before, div.cell.selected.jupyter-soft-selected:before {
+    width: 2px;
+}
+
+div.cell.selected:before, div.cell.selected.jupyter-soft-selected:before {
+    width: 2px;
+    background: #42A5F5;
+}
+
+/* *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: content-box;
+} */
+
+#header-container {
+  display: none !important;
+}
+
+.notebook_app > #header {
+    box-shadow: none;
+}
+
+#notebook-container {
+    box-shadow: none !important;
+	max-width: 900px;
+	padding: 15px;
+	padding-right: 100px;
+    background-color: #fff;
+    min-height: 0;
+}
+
+/* Top Box */
+
+.css-13fbvmf {
+	height:0px;
+	display: none;
+}
+
+.rc-FramedLabHeader {
+	height:20px;
+}
+
+.CodeMirror {
+    font-family: "JetBrains Mono", monospace;
+	font-size: 0.9em;
+}
+
+/* Code Colors */
+
+.cm-s-ipython span.cm-comment {
+    color: hsl(180, 10%, 50%); font-style: normal;
+}.cm-s-ipython span.cm-string {
+    color: hsl(114, 45%, 46%);
+}.cm-s-ipython span.cm-number {
+    color: hsl(23, 100%, 46%);
+}.cm-s-ipython span.cm-operator {
+    color: hsl(0, 100%, 60%);
+}.cm-s-ipython span.cm-property {
+    color: hsl(227, 100%, 35%); font-style: normal; font-weight: 500;
+}
+
+/* Dark Mode */
+
+.cm-s-ipython span.cm-keyword {
+    color: hsl(286, 100%, 20%); font-style: normal; font-weight: 500;
+}.cm-s-ipython span.cm-def,.cm-s-ipython span.cm-builtin,.cm-s-ipython span.cm-property {
+    color: hsl(58, 100%, 20%); font-style: normal; font-weight: 500;
+}
+
+
+/* Light Mode */
+
+
+.cm-s-ipython span.cm-keyword {
+    color: hsl(286, 100%, 42%); font-style: normal; font-weight: 500;
+}.cm-s-ipython span.cm-def,.cm-s-ipython span.cm-builtin,.cm-s-ipython span.cm-property {
+    color: hsl(40, 100%, 35%); font-style: normal; font-weight: 500;
+}
+
+
+
+.rendered_html h2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+    font-size: 157.1%;
+    margin: 1.27em 0 0 0;
+	margin-left: -10px;
+    font-weight: 500;
+    line-height: 1.0;
+	background: #00e5ff24;
+}
+
+
+
+
