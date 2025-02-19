@@ -1,0 +1,49 @@
+.ccYvuT,.cYUsjC, .bmyeJm, .ePHkuK, .hURcQP, .fsfaEC, .fNIuUL, .fwQZzL {
+    background-color: rgba(101, 110, 139, 0) !IMPORTANT;
+}
+
+/* ::-webkit-scrollbar-thumb {
+    border: none;
+    box-shadow: none;
+    background-color: rgb(62, 167, 255);
+    border-radius: 8px;
+    min-height: 48px;
+} */
+
+body {
+    --color: hsla(182, 10%, 10%, .95);
+    background-image: linear-gradient(var(--color), var(--color)), url('https://raw.githubusercontent.com/Kisara-k/wallpapers/refs/heads/main/Sandrone Bright.png') !important;
+    background-size: COVER !important;
+    background-repeat: no-repeat !important;
+/*     background-position: top center !important; */
+	background-position: center calc(100%) !important;
+/* 	max-height: 1080px; */
+/*     position: relative; */
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 4px;
+}
+
+.legacy-less-dark-theme, .legacy-less-dark-theme * {
+    background-color: transparent !important;
+	border-color: #313131;
+	border-radius: 4px;
+}
+
+
+body * {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* .MuiPaper-root {
+    width: 620px;
+    box-sizing: border-box;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 32px;
+    background-color: rgba(0, 0, 0, .63) !important;
+}
+
+ */
