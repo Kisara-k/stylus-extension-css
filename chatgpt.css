@@ -41,16 +41,16 @@ div[style*="view-transition-name:var(--vt-splash-screen-headline)"] {
 } */
 
 
-.bg-token-sidebar-surface-primary.h-full > div , .bg-token-sidebar-surface-primary.h-full {
+.border-token-border-light.h-full > div , .border-token-border-light.h-full {
     width: 200px !important;
 }
 
-.bg-token-sidebar-surface-primary.h-full > div {
+.border-token-border-light.h-full > div {
     background: hsla(0, 0%, 4%, .91);
 }
 
 
-.bg-token-sidebar-surface-primary.h-full {
+.border-token-border-light.h-full {
     opacity: 0;
     transition: 
         opacity 0.3s ease,
@@ -60,14 +60,14 @@ div[style*="view-transition-name:var(--vt-splash-screen-headline)"] {
     clip-path: polygon(0 0, 20% 0, 20% 100%, 0 100%);
 }
 
-.bg-token-sidebar-surface-primary.h-full:hover {
+.border-token-border-light.h-full:hover {
     opacity: 1;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Expand smoothly */
 }
 
 /* Reset the clip-path when element is visible to allow full interaction */
-.bg-token-sidebar-surface-primary.h-full:hover,
-.bg-token-sidebar-surface-primary.h-full:has(:hover) {
+.border-token-border-light.h-full:hover,
+.border-token-border-light.h-full:has(:hover) {
     clip-path: none;
 }
 
@@ -151,7 +151,7 @@ div[style*="view-transition-name:var(--vt-splash-screen-headline)"] {
 
 
 
-.bg-token-sidebar-surface-primary, .bg-token-main-surface-primary {
+.border-token-border-light, .bg-token-main-surface-primary {
     background: #000;
 }
 
