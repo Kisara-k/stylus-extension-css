@@ -1,12 +1,12 @@
-.z-0 {
+/* .z-0 {
     border-radius: 0.5rem !important;
     max-width: calc(940px + 2*var(--side)) !important;
     background: #ffffff47 !important;
-}
+} */
 
 .z-0::before {
     --color: rgba(32, 22, 22, .85);
-    --color: rgba(28, 21, 21, .6);
+    --color: rgba(23, 19, 19, .9);
     content: "";
     position: absolute;
     top: 0;
@@ -23,21 +23,123 @@
     z-index: -1; /* Ensures the image stays in the background */
 }
 
+.text-token-text-secondary.relative.mt-auto.flex.min-h-8.w-full.items-center.justify-center.p-2.text-center.text-xs > div {
+    display: none;
+}
+
+.text-token-text-secondary.relative.mt-auto.flex.min-h-8.w-full.items-center.justify-center.p-2.text-center.text-xs {
+    margin-top: -10px;
+}
+
+div[style*="view-transition-name:var(--vt-splash-screen-headline)"] {
+    display: none;
+}
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+.bg-token-sidebar-surface-primary.h-full > div , .bg-token-sidebar-surface-primary.h-full {
+    width: 200px !important;
+}
+
+.bg-token-sidebar-surface-primary.h-full > div {
+    background: hsla(0, 0%, 4%, .91);
+}
+
+
+.bg-token-sidebar-surface-primary.h-full {
+    opacity: 0;
+    transition: 
+        opacity 0.3s ease,
+        clip-path 0.3s ease; /* Animate clip-path too */
+    display: flex;
+    position: fixed;
+    clip-path: polygon(0 0, 20% 0, 20% 100%, 0 100%);
+}
+
+.bg-token-sidebar-surface-primary.h-full:hover {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Expand smoothly */
+}
+
+/* Reset the clip-path when element is visible to allow full interaction */
+.bg-token-sidebar-surface-primary.h-full:hover,
+.bg-token-sidebar-surface-primary.h-full:has(:hover) {
+    clip-path: none;
+}
+
+
+
 /* Hide Sora button */
 
 .relative.self-stretch {
     display: none;
 }
 
+#sora {
+  display: none;
+}
+
+
+/* Page content styles */
+
+.prose :where(h1 strong):not(:where([class~=not-prose] *)) , .prose :where(h1):not(:where([class~=not-prose] *)) {
+    color: var(--tw-prose-headings);
+    font-size: 1.4em;
+    font-weight: 500 !important;
+    line-height: 1.11111;
+    margin-bottom: .888889em;
+    margin-top: 0;
+}
+
+.prose :where(h2):not(:where([class~=not-prose] *)) {
+    font-size: 1.45em;
+    font-weight: 500;
+}
+
+.prose :where(h2 strong):not(:where([class~=not-prose] *)) {
+    font-weight: 500;
+}
+
+
+.prose :where(h3):not(:where([class~=not-prose] *)) {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-top: 7px;
+    padding-bottom: 5px
+}
+
+
+* {
+    --spacing: 3px
+}
+
+.prose :where(li):not(:where([class~=not-prose] *)) {
+    margin-bottom: .35em;
+    margin-top: .15em;
+}
+
+.prose {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+
+
 
 /* canvas styles */
 
-* {
+/* * {
     --main-surface-primary: #0000;
     --main-surface-secondary: #ffffff0d;
     --message-surface: #5757573d;
+    --bg-elevated-secondary: #57575700;
 }
 
+ */
 .absolute.bottom-0.z-20.h-24.w-full.transition-colors {
     display: none !important;
 }
@@ -50,7 +152,7 @@
 
 
 .bg-token-sidebar-surface-primary, .bg-token-main-surface-primary {
-    background: #00000000;
+    background: #000;
 }
 
 /* Hide scrollbar for Firefox */
