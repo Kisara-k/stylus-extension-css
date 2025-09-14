@@ -1,27 +1,34 @@
+/*
+========== Main ============
+*/
+
 /* .z-0 {
     border-radius: 0.5rem !important;
     max-width: calc(940px + 2*var(--side)) !important;
     background: #ffffff47 !important;
 } */
 
+
+* {
+    font-family: lineaation-sans;
+  text-align: left;
+}
+
 .z-0::before {
-    --color: rgba(32, 22, 22, .85);
-    --color: rgba(23, 19, 19, .9);
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        linear-gradient(var(--color), var(--color)), 
-        url('https://raw.githubusercontent.com/Kisara-k/wallpapers/refs/heads/main/Arle%20Main.jpg') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
     filter: grayscale(50%); /* Reduces saturation */
     z-index: -1; /* Ensures the image stays in the background */
 }
+
+
 
 .text-token-text-secondary.relative.mt-auto.flex.min-h-8.w-full.items-center.justify-center.p-2.text-center.text-xs > div {
     display: none;
@@ -41,12 +48,8 @@ div[style*="view-transition-name:var(--vt-splash-screen-headline)"] {
 } */
 
 
-.border-token-border-light.h-full > div , .border-token-border-light.h-full {
+.border-token-border-light.h-full > div > div, .border-token-border-light.h-full > div, .border-token-border-light.h-full {
     width: 200px !important;
-}
-
-.border-token-border-light.h-full > div {
-    background: hsla(0, 0%, 4%, .91);
 }
 
 
@@ -149,12 +152,6 @@ div[style*="view-transition-name:var(--vt-splash-screen-headline)"] {
     scrollbar-color: #0000003d transparent; 
 }
 
-
-
-.border-token-border-light, .bg-token-main-surface-primary {
-    background: #000;
-}
-
 /* Hide scrollbar for Firefox */
 .overflow-y-auto.pr-2.-mr-2.relative.duration-500.transition-opacity.flex-1.flex-col {
     scrollbar-width: thin; /* Thinner scrollbar for Firefox */
@@ -184,7 +181,88 @@ div[style*="view-transition-name:var(--vt-splash-screen-headline)"] {
     border-color: #fff !important;
 }
 
+.text-page-header {
+    visibility: hidden;
+}
+
+p[data-placeholder="Ask anything"] {
+    display: none;
+}
+
+
 .relative.w-full.px-2.py-2.text-center.text-xs.text-token-text-secondary {
     opacity: 0 !important;
     display: none;
 }
+
+
+
+
+
+
+
+
+/*
+========== Dark Mode BG ============
+*/
+
+
+
+.z-0::before {
+    --color: rgba(32, 22, 22, .85);
+    --color: rgba(23, 19, 19, .8);
+    background-image: 
+        linear-gradient(var(--color), var(--color)), 
+        url('https://raw.githubusercontent.com/Kisara-k/wallpapers/refs/heads/main/Arle%20Main.jpg') !important;
+}
+
+.z-0::before {
+    background-color: hsl(220, 26%, 9%) !important;
+}
+
+
+.border-token-border-light, .bg-token-main-surface-primary {
+    background: #000;
+}
+
+.border-token-border-light.h-full > div {
+    background: hsla(0, 0%, 4%, .91);
+}
+
+
+.content-fade::after {
+    background: transparent !important;
+}
+
+.border-token-border-light, .bg-token-main-surface-primary {
+    background: none;
+}
+
+.border-token-border-light.h-full, .border-token-border-light.h-full > *, .border-token-border-light.h-full > * > * {
+    background: #00000052 !important;
+}
+
+.bg-token-bg-elevated-secondary {
+    background: black !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
