@@ -1,0 +1,10 @@
+/* Set font size for markdown headers */
+h3 {
+  font-size: 1em !important;
+}
+
+/* Optional: Customize other headers */
+h2 {
+  font-size: 2em !important;
+  color: red;
+}
